@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<title>Výpočet pro míchání báze, boosteru a příchutě</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<script language="JavaScript" type="text/javascript" src="lib.js"></script>
+</head>
+<body style="background: LemonChiffon" onload="init()">
+<center>
+	<h2>Výpočet pro míchání báze, boosteru a příchutě</h2>
+	<table cellpadding="3" cellspacing="2" border="0">
+		<tr>
+			<td align="right">Denní dávka</td>
+			<td>
+				<input type="text" size="4" maxlength="3" id="in_d">
+				mg nikotinu
+			</td>
+		</tr>
+		<tr>
+			<td align="right">Denní spotřeba</td>
+			<td>
+				<input type="text" size="4" maxlength="3" id="in_s">
+				ml liquidu
+			</td>
+		</tr>
+		<tr>
+			<td align="right">Příchuť</td>
+			<td>
+				<input type="text" size="4" maxlength="3" id="in_p">
+				ml v
+				<input type="text" size="4" maxlength="3" id="in_l">
+				ml lahvičce
+			</td>
+		</tr>
+		<tr>
+			<td align="right">Booster</td>
+			<td>
+				<input type="text" size="4" maxlength="3" id="in_n">
+				mg/ml v
+				<input type="text" size="4" maxlength="3" id="in_b">
+				ml lahvičce
+			</td>
+		</tr>
+	</table>
+	<br>
+	<input type="button" value="Výpočet" id="run" onclick="start();"></input>
+	<input type="button" value="Smazat" id="clear" onclick="clearInput(); clearTables();"></input>
+</center>
+<hr>
+<center>
+	<div width="100%" height="100%" id="output"></div>
+</center>
+</body>
+</html>
